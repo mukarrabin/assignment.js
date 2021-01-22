@@ -1,36 +1,46 @@
-// #1 FIRST
-/* function kilometerToMeter(meter){
-    var kilometer = meter*1000;
-    return kilometer;
+// Kilometer to meter conversion:
+function kilometerToMeter(meter){
+    if(meter<0){
+        return ("This is a nagetive Value")
+    }
+    else{
+        var kilometer = meter*1000;
+        return kilometer;
+    }
 }
-var result = kilometerToMeter(1);
+var result = kilometerToMeter(6);
 console.log(result);
-*/
 
 
 
-// #2 SECOND
-/*function budgetCalculator(a,b,c){
-    var watchCost= watch*50;
-    var mobileCost= mobile*100;
-    var laptopCost= laptop*500;
 
-    totalCost=watchCost+mobileCost+laptopCost;
-    return totalCost;
+// Caltulate the Budget
+function budgetCalculator(a,b,c){
+    if(watch<0 || mobile<0 || laptop<0){
+        return ("Your input is invalid")
+    }
+    else{
+        var watchCost= watch*50;
+        var mobileCost= mobile*100;
+        var laptopCost= laptop*500;
+    
+        totalCost=watchCost+mobileCost+laptopCost;
+        return totalCost;
+
+    }
 }
 var watch=2;
 var mobile=2;
 var laptop=1;
 var allGadget = budgetCalculator(watch, mobile, laptop);
 console.log(allGadget);
-*/
 
 
 
-// #3 THIRD
-/* function hotelCost(day){
+// Calculating the hotel cost
+ function hotelCost(day){
     var rent = 0;
-    if (day <= 10){
+    if (day <= 10 && day>0){
         rent = day*100;
     }
     else if( day<=20){
@@ -50,10 +60,9 @@ console.log(allGadget);
 }
 var count = hotelCost(27);
 console.log(count);
-*/
 
-// #4 FOURTH (Incomplete)
-/* function getBigNum(names){
+// Finding the largest name (Incomplete)
+ function getBigNum(names){
     var larger = names[0];
     for(var i=0; i<=names.length; i++){
         var element = names[i];
@@ -66,4 +75,3 @@ console.log(count);
 
 var output = getBigNum(['as', 'adwdwdsx78', 'stausif', 'sade', 'qwed']);
 console.log(output);
-*/
