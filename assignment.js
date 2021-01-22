@@ -40,7 +40,10 @@ console.log(allGadget);
 // Calculating the hotel cost
  function hotelCost(day){
     var rent = 0;
-    if (day <= 10 && day>0){
+    if(day<=0){
+        return "iInvalid Input";
+    }
+    else if (day <= 10 && day>0){
         rent = day*100;
     }
     else if( day<=20){
@@ -58,7 +61,7 @@ console.log(allGadget);
     }
     return rent;
 }
-var count = hotelCost(27);
+var count = hotelCost(0);
 console.log(count);
 
 // Finding the largest name (Incomplete)
