@@ -1,3 +1,5 @@
+//https://github.com/mukarrabin/assignment.js
+
 // Kilometer to meter conversion:
 function kilometerToMeter(meter){
     if(meter<0){
@@ -40,7 +42,7 @@ console.log(allGadget);
 // Calculating the hotel cost
  function hotelCost(day){
     var rent = 0;
-    if(day<=0){
+    if(day<0){
         return "iInvalid Input";
     }
     else if (day <= 10 && day>0){
